@@ -313,6 +313,13 @@ vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/l
     vendor/lge/c70n/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/lge/c70n/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/lge/c70n/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/lge/c70n/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/lge/c70n/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lge/c70n/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
@@ -331,6 +338,7 @@ vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/l
 
 PRODUCT_PACKAGES += \
     TimeService \
+    libmm-disp-apis \
     com.qualcomm.location \
     qcrilmsgtunnel \
     qcnvitems \
