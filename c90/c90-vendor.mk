@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-    vendor/lge/c90/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/c90/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/lge/c90/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/c90/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
@@ -32,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/bin/vm_bms:system/bin/vm_bms \
     vendor/lge/c90/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/c90/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+    vendor/lge/c90/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/c90/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/c90/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
     vendor/lge/c90/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
@@ -43,15 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/lge/c90/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     vendor/lge/c90/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-    vendor/lge/c90/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
-    vendor/lge/c90/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    vendor/lge/c90/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     vendor/lge/c90/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/lge/c90/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/lge/c90/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -77,13 +68,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/lge/c90/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
     vendor/lge/c90/proprietary/lib/libHDR.so:system/lib/libHDR.so \
-    vendor/lge/c90/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/lge/c90/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
     vendor/lge/c90/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
-    vendor/lge/c90/proprietary/lib/libchromatix_hi841_common.so:system/lib/libchromatix_hi841_common.so \
-    vendor/lge/c90/proprietary/lib/libchromatix_hi841_default_video.so:system/lib/libchromatix_hi841_default_video.so \
-    vendor/lge/c90/proprietary/lib/libchromatix_hi841_preview.so:system/lib/libchromatix_hi841_preview.so \
-    vendor/lge/c90/proprietary/lib/libchromatix_hi841_snapshot.so:system/lib/libchromatix_hi841_snapshot.so \
+    vendor/lge/c90/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/lge/c90/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/lge/c90/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/lge/c90/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
@@ -94,7 +80,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/lge/c90/proprietary/lib/libmorpho_image_stab31.so:system/lib/libmorpho_image_stab31.so \
     vendor/lge/c90/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/lge/c90/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/c90/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    vendor/lge/c90/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
     vendor/lge/c90/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/c90/proprietary/lib/libvss_common_idl.so:system/lib/libvss_common_idl.so \
     vendor/lge/c90/proprietary/lib/libvss_common_iface.so:system/lib/libvss_common_iface.so \
@@ -106,8 +94,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/lge/c90/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/lge/c90/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/lge/c90/proprietary/vendor/firmware/BCM20795A1_001.002.012.0003.0110_Generic_I2C_NCD_Signed_configdata.ncd:system/vendor/firmware/BCM20795A1_001.002.012.0003.0110_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/lge/c90/proprietary/vendor/firmware/BCM20795A1_001.002.00105_LiteFirmware_Unsigned_configdata.ncd:system/vendor/firmware/BCM20795A1_001.002.00105_LiteFirmware_Unsigned_configdata.ncd \
+    vendor/lge/c90/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0049_Generic_I2C_NCD_Signed_configdata.ncd:system/vendor/firmware/BCM20795A2_001.003.025.0005.0049_Generic_I2C_NCD_Signed_configdata.ncd \
     vendor/lge/c90/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/lge/c90/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/c90/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -159,7 +147,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libactuator_wv517_camera.so:system/vendor/lib/libactuator_wv517_camera.so \
     vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
     vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_camcorder.so:system/vendor/lib/libactuator_zc533_camcorder.so \
-    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_camera.so:system/vendor/lib/libactuator_zc533_camera.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_camera.so:system/vendor/lib/libactuator_zc533__camera.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_hi842.so:system/vendor/lib/libactuator_zc533_hi842.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_hi842_camcorder.so:system/vendor/lib/libactuator_zc533_hi842_camcorder.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_hi842_camera.so:system/vendor/lib/libactuator_zc533_hi842_camera.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_imx258_camcorder.so:system/vendor/lib/libactuator_zc533_imx258_camcorder.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_imx258_camera.so:system/vendor/lib/libactuator_zc533_imx258_camera.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_mn34153.so:system/vendor/lib/libactuator_zc533_mn34153.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_mn34153_camcorder.so:system/vendor/lib/libactuator_zc533_mn34153_camcorder.so \
+    vendor/lge/c90/proprietary/vendor/lib/libactuator_zc533_mn34153_camera.so:system/vendor/lib/libactuator_zc533_mn34153_camera.so \
     vendor/lge/c90/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/lge/c90/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/lge/c90/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -170,10 +166,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_default_video.so:system/vendor/lib/libchromatix_hi553_ff_default_video.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_liveshot.so:system/vendor/lib/libchromatix_hi553_ff_liveshot.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_snapshot.so:system/vendor/lib/libchromatix_hi553_ff_snapshot.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_common.so:system/vendor/lib/libchromatix_ov5670_common.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_default_video.so:system/vendor/lib/libchromatix_ov5670_default_video.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_liveshot.so:system/vendor/lib/libchromatix_ov5670_liveshot.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_snapshot.so:system/vendor/lib/libchromatix_ov5670_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_vt.so:system/vendor/lib/libchromatix_hi553_ff_vt.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_common.so:system/vendor/lib/libchromatix_mn34153_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_common_m.so:system/vendor/lib/libchromatix_mn34153_common_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_default_video.so:system/vendor/lib/libchromatix_mn34153_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_default_video_m.so:system/vendor/lib/libchromatix_mn34153_default_video_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_liveshot.so:system/vendor/lib/libchromatix_mn34153_liveshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_liveshot_m.so:system/vendor/lib/libchromatix_mn34153_liveshot_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_preview.so:system/vendor/lib/libchromatix_mn34153_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_preview_m.so:system/vendor/lib/libchromatix_mn34153_preview_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot.so:system/vendor/lib/libchromatix_mn34153_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot_m.so:system/vendor/lib/libchromatix_mn34153_snapshot_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot_panorama_m.so:system/vendor/lib/libchromatix_mn34153_snapshot_panorama_m.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/lib/libchromatix_ov8858_default_video.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_hfr_120fps.so \
@@ -182,6 +186,35 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/lib/libchromatix_ov8858_liveshot.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_snapshot.so:system/vendor/lib/libchromatix_hi191_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_snapshot_sk.so:system/vendor/lib/libchromatix_hi191_snapshot_sk.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_common.so:system/vendor/lib/libchromatix_hi544_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_default_video.so:system/vendor/lib/libchromatix_hi544_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_preview.so:system/vendor/lib/libchromatix_hi544_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_snapshot.so:system/vendor/lib/libchromatix_hi544_snapshot.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi545_common.so:system/lib/libchromatix_hi545_common.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi545_default_video.so:system/lib/libchromatix_hi545_default_video.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi545_preview.so:system/lib/libchromatix_hi545_preview.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi545_snapshot.so:system/lib/libchromatix_hi545_snapshot.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi841_common.so:system/lib/libchromatix_hi841_common.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi841_default_video.so:system/lib/libchromatix_hi841_default_video.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi841_preview.so:system/lib/libchromatix_hi841_preview.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_hi841_snapshot.so:system/lib/libchromatix_hi841_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_imx219_default_video.so:system/lib/libchromatix_imx219_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_preview.so:system/vendor/lib/libchromatix_imx219_imtech_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_snapshot.so:system/vendor/lib/libchromatix_imx219_imtech_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_mms_video.so:system/vendor/lib/libchromatix_imx219_mms_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
     vendor/lge/c90/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/c90/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/c90/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -230,9 +263,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi553_ff.so:system/vendor/lib/libmmcamera_hi553_ff.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841.so:system/vendor/lib/libmmcamera_hi841.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841_eeprom.so:system/vendor/lib/libmmcamera_hi841_eeprom.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_mn34153.so:system/vendor/lib/libmmcamera_mn34153.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov8858_eeprom.so:system/vendor/lib/libmmcamera_ov8858_eeprom.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
@@ -240,7 +272,16 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi191.so:system/vendor/lib/libmmcamera_hi191.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi544.so:system/vendor/lib/libmmcamera_hi544.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi544_eeprom.so:system/vendor/lib/libmmcamera_hi544_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841.so:system/vendor/lib/libmmcamera_hi841.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841_eeprom.so:system/vendor/lib/libmmcamera_hi841_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219_eeprom.so:system/vendor/lib/libmmcamera_imx219_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
@@ -270,17 +311,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/lge/c90/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/lge/c90/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/lge/c90/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
-    vendor/lge/c90/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
-    vendor/lge/c90/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
-    vendor/lge/c90/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
-    vendor/lge/c90/proprietary/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so \
-    vendor/lge/c90/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/lge/c90/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/lge/c90/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
     vendor/lge/c90/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/lge/c90/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lge/c90/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
@@ -288,18 +320,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/lge/c90/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/lge/c90/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/lge/c90/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/c90/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/lge/c90/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/lge/c90/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/lge/c90/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/lge/c90/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/lge/c90/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-    vendor/lge/c90/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
-    vendor/lge/c90/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
+    vendor/lge/c90/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
     TimeService \
-    libmm-disp-apis \
     com.qualcomm.location \
     qcrilmsgtunnel \
     qcnvitems \
