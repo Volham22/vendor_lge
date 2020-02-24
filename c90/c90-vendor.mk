@@ -167,6 +167,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_liveshot.so:system/vendor/lib/libchromatix_hi553_ff_liveshot.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_snapshot.so:system/vendor/lib/libchromatix_hi553_ff_snapshot.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi553_ff_vt.so:system/vendor/lib/libchromatix_hi553_ff_vt.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_common.so:system/vendor/lib/libchromatix_mn34153_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_common_m.so:system/vendor/lib/libchromatix_mn34153_common_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_default_video.so:system/vendor/lib/libchromatix_mn34153_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_default_video_m.so:system/vendor/lib/libchromatix_mn34153_default_video_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_liveshot.so:system/vendor/lib/libchromatix_mn34153_liveshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_liveshot_m.so:system/vendor/lib/libchromatix_mn34153_liveshot_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_preview.so:system/vendor/lib/libchromatix_mn34153_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_preview_m.so:system/vendor/lib/libchromatix_mn34153_preview_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot.so:system/vendor/lib/libchromatix_mn34153_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot_m.so:system/vendor/lib/libchromatix_mn34153_snapshot_m.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_mn34153_snapshot_panorama_m.so:system/vendor/lib/libchromatix_mn34153_snapshot_panorama_m.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/lib/libchromatix_ov8858_default_video.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_hfr_120fps.so \
@@ -176,10 +187,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
     vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_common.so:system/vendor/lib/libchromatix_ov5670_common.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_default_video.so:system/vendor/lib/libchromatix_ov5670_default_video.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_liveshot.so:system/vendor/lib/libchromatix_ov5670_liveshot.so \
-    vendor/lge/c90/proprietary/vendor/lib/libchromatix_ov5670_snapshot.so:system/vendor/lib/libchromatix_ov5670_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_snapshot.so:system/vendor/lib/libchromatix_hi191_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi191_snapshot_sk.so:system/vendor/lib/libchromatix_hi191_snapshot_sk.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_common.so:system/vendor/lib/libchromatix_hi544_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_default_video.so:system/vendor/lib/libchromatix_hi544_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_preview.so:system/vendor/lib/libchromatix_hi544_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_hi544_snapshot.so:system/vendor/lib/libchromatix_hi544_snapshot.so \
     vendor/lge/c90/proprietary/lib/libchromatix_hi545_common.so:system/lib/libchromatix_hi545_common.so \
     vendor/lge/c90/proprietary/lib/libchromatix_hi545_default_video.so:system/lib/libchromatix_hi545_default_video.so \
     vendor/lge/c90/proprietary/lib/libchromatix_hi545_preview.so:system/lib/libchromatix_hi545_preview.so \
@@ -188,6 +204,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/lib/libchromatix_hi841_default_video.so:system/lib/libchromatix_hi841_default_video.so \
     vendor/lge/c90/proprietary/lib/libchromatix_hi841_preview.so:system/lib/libchromatix_hi841_preview.so \
     vendor/lge/c90/proprietary/lib/libchromatix_hi841_snapshot.so:system/lib/libchromatix_hi841_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
+    vendor/lge/c90/proprietary/lib/libchromatix_imx219_default_video.so:system/lib/libchromatix_imx219_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_preview.so:system/vendor/lib/libchromatix_imx219_imtech_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_imtech_snapshot.so:system/vendor/lib/libchromatix_imx219_imtech_snapshot.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_mms_video.so:system/vendor/lib/libchromatix_imx219_mms_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
+    vendor/lge/c90/proprietary/vendor/lib/libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
     vendor/lge/c90/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/c90/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/c90/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -237,6 +264,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi553_ff.so:system/vendor/lib/libmmcamera_hi553_ff.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_mn34153.so:system/vendor/lib/libmmcamera_mn34153.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov8858_eeprom.so:system/vendor/lib/libmmcamera_ov8858_eeprom.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
@@ -245,9 +273,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi191.so:system/vendor/lib/libmmcamera_hi191.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi544.so:system/vendor/lib/libmmcamera_hi544.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi544_eeprom.so:system/vendor/lib/libmmcamera_hi544_eeprom.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841.so:system/vendor/lib/libmmcamera_hi841.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmcamera_hi841_eeprom.so:system/vendor/lib/libmmcamera_hi841_eeprom.so \
-    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_imx219_eeprom.so:system/vendor/lib/libmmcamera_imx219_eeprom.so \
+    vendor/lge/c90/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/c90/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
